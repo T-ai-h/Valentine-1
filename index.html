@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🤍</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffd6e7, #ffc2d1);
+    font-family: "Prompt", sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 85%;
+    max-width: 400px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    color: #ff6f91;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #ff6f91;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4d73;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Happy Valentine's Day 🤍</h1>
+    <p>
+        ถึงแม้พี่จะเป็นพี่ของเธอ  
+        แต่ทุกครั้งที่ได้คุยด้วย  
+        พี่รู้สึกสบายใจมากเลยนะ 😊
+    </p>
+    <p>
+        ขอบคุณที่เข้ามา  
+        ทำให้วันธรรมดาของพี่มันน่ารักขึ้น 💕
+    </p>
+
+    <button onclick="showLove()">กดดูความลับ 🤍</button>
+</div>
+
+<script>
+function showLove() {
+    alert("ถ้าเธอสบายใจ พี่ก็อยากอยู่คุยกับเธอไปเรื่อย ๆ เลยนะ 😊🤍");
+}
+</script>
+
+</body>
+</html>
